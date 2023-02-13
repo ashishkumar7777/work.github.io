@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+svg {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+/*start-sideNav*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-transform: capitalize;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.toggle {
+  position: fixed;
+  left: 25px;
+  top: 25px;
+  display: none;
+  z-index: 1;
+}
+
+/*end-sideNav*/
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border-right: 1px solid #c1392b;
+  border-left: 1px solid #c1392b;
+  color: #c1392b;
+  transition: all 0.5s ease-in-out;
+}
+
+.bg {
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+  height: 100vh;
+
+  background-position: center top;
+}
+
+.navbar-nav > li > a {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 10px 17px;
+  margin-top: 24px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+
+.nav > li {
+  float: ;
+  display: inline-block;
+}
+
+nav {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-toggle {
+  background-color: #000;
+  border: 1px solid transparent;
+}
+
+.caption {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  left: 9%;
+  top: 40%;
+  text-transform: capitalize;
+  line-height: 58px;
+  color: #fff;
+}
+
+.caption h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.caption h1 {
+  font-weight: 800;
+  line-height: 3.5rem;
+  font-size: 1.87rem;
+}
+
+.caption h1 span {
+  font-weight: 800;
+  line-height: 50px;
+  font-size: 2.6rem;
+}
+
+.caption .btn-primary {
+  color: #fff;
+  background-color: #c1392b;
+  border: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.caption .btn-primary:hover {
+  background-color: #807391;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.about {
+  text-transform: capitalize;
+}
+
+.about .clearfix {
+  padding-bottom: 50px;
+}
+.about ul {
+  float: left;
+  list-style: none;
+}
+.about ul li {
+  line-height: 3;
+}
+.about p {
+  line-height: 2;
+}
+.about ul:nth-child(3) {
+  padding-left: 43px;
+}
+.about ul:nth-child(2) {
+  font-weight: 700;
+}
+.about ul li span {
+  font-weight: 700;
+  float: right;
+  padding-left: 58px;
+}
+.about li,
+.about p,
+.about h5 {
+  font-size: 1rem;
+}
+
+.heading h1 {
+  margin-top: 96px;
+  margin-bottom: 35px;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.heading div {
+  border-top: 1px solid #f00;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 80px;
+}
+.heading span {
+  background: #f00;
+  width: 15px;
+  height: 15px;
+  font-size: 9px;
+  border: 2px solid #f00;
+  transform: rotate(45deg);
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  line-height: 11px;
+  right: 45%;
+}
+.heading .fa-code {
+  transform: rotate(134deg);
+}
+.heading div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -6px;
+  width: 10px;
+  height: 10px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.heading div::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -6px;
+  width: 10px;
+  height: 10px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.aboutDiv .icon {
+  font-size: 63px;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  line-height: ;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #f00;
+  line-height: 2.2;
+}
+.aboutDiv h5 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.mySkill {
+  background-image: url(../img/skill-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+  margin-top: 83px;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.mySkill .heading div {
+  margin-bottom: 40px;
+}
+
+.mySkill p {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mySkill .box {
+  margin-top: 20px;
+}
+
+.mySkill p:nth-child(2) {
+  float: right;
+  margin-top: -30px;
+}
+
+.mySkill .box {
+  width: 100%;
+  background-color: #fff;
+  height: 20px;
+}
+
+.mySkill .level {
+  background-color: #bebeb6;
+  height: 20px;
+}
+
+.mySkill .col-md-6 {
+  margin-top: 40px;
+}
+
+.imgDiv-con {
+  margin: 20px;
+  position: relative;
+  box-shadow: 0px 0px 25px -10px;
+}
+
+.portfolio img {
+  margin: 0 auto;
+}
+
+.portfolio .col-md-6 {
+  padding: 0px;
+  position: relative;
+}
+
+.portfolio {
+  padding-bottom: 80px;
+}
+
+.portfolio .textDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+}
+
+.col-md-6:hover .textDiv {
+  height: 100%;
+  opacity: 1;
+  transition: all 0.7s ease-in-out;
+}
+
+.textDiv a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 23px;
+  border: 4px solid #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.textDiv a:hover {
+  color: #f00;
+  border: 4px solid #f00;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  background: #252523;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .about ul li:nth-child(5) {
+    display: none;
+  }
+  .about ul li span {
+    padding-left: 48px;
+  }
+  .about ul:nth-child(3) {
+    padding-left: 33px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
